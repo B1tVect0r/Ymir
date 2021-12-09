@@ -1,0 +1,671 @@
+e1: 1784e50f-2aaa-40ba-be67-2b4f1842f2e8
+e2: 7d05f6b3-a615-4a50-be91-c03759321a2d
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+Adding facing component to E2
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System B Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 2 components
+Removing facing component from E2
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
+System A Stats: 
+	1784e50f-2aaa-40ba-be67-2b4f1842f2e8: 1 components
+	7d05f6b3-a615-4a50-be91-c03759321a2d: 1 components
