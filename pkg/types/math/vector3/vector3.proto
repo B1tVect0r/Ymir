@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package vector3;
+
+option go_package = "github.com/B1tVect0r/ymir/pkg/types/math/vector3";
+
+message Vector3 {
+    double X = 1;
+    double Y = 2;
+    double Z = 3;
+}

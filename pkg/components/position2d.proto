@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package components;
+
+option go_package = "github.com/B1tVect0r/ymir/pkg/components";
+
+import "pkg/types/math/vector2/vector2.proto";
+
+message Position2D {
+    vector2.Vector2 Position = 1;
+}
