@@ -25,4 +25,4 @@ RUN wget -O task.tar.gz https://github.com/go-task/task/releases/download/v${TAS
     rm task.tar.gz
 
 RUN curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash && \
-echo "source ~/.git-completion.bash" >> ~/.bashrc
+    echo "source ~/.git-completion.bash" >> ~/.bashrc
