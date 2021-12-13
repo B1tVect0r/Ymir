@@ -2,23 +2,29 @@ package ecs
 
 import (
 	"fmt"
-
-	"github.com/google/uuid"
+	"sync/atomic"
 )
 
-type EntityHandle string
+type EntityID uint32
 
-func NewEntity(r *Registry, component Component, components ...Component) (EntityHandle, error) {
-	e := &Entity{ID: uuid.NewString()}
+const InvalidEntityID EntityID = 0
 
-	return r.RegisterEntity(e, append([]Component{component}, components...)...)
+var lastEntityID = InvalidEntityID
+
+func nextEntityID() EntityID {
+	return EntityID(atomic.AddUint32((*uint32)(&lastEntityID), 1))
 }
 
-func AddComponents(r *Registry, eID EntityHandle, components ...Component) error {
+func NewEntity(r *Registry, component Component, components ...Component) (EntityID, error) {
+
+	return r.RegisterEntity(append([]Component{component}, components...)...)
+}
+
+func AddComponents(r *Registry, eID EntityID, components ...Component) error {
 	return r.AddComponentsToEntity(eID, components...)
 }
 
-func RemoveComponents(r *Registry, eID EntityHandle, cIDs ...ComponentID) error {
+func RemoveComponents(r *Registry, eID EntityID, cIDs ...ComponentID) error {
 	if empty, err := r.RemoveComponentsFromEntity(eID, cIDs...); err != nil {
 		return fmt.Errorf("failed to remove components from entity: %w", err)
 	} else if empty {
@@ -30,6 +36,6 @@ func RemoveComponents(r *Registry, eID EntityHandle, cIDs ...ComponentID) error 
 	return nil
 }
 
-func Destroy(r *Registry, eID EntityHandle) error {
+func Destroy(r *Registry, eID EntityID) error {
 	return r.UnregisterEntity(eID)
 }
