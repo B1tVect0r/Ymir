@@ -10,7 +10,7 @@ func getDuplicateIDs(components ...Component) []ComponentID {
 	outDuplicates := make([]ComponentID, 0, len(components))
 
 	for _, c := range components {
-		cID := c.Type()
+		cID := c.ID()
 		if _, ok := encountered[cID]; ok {
 			outDuplicates = append(outDuplicates, cID)
 		}
@@ -21,7 +21,7 @@ func getDuplicateIDs(components ...Component) []ComponentID {
 }
 
 func (ecm entityComponentMap) contains(component Component) bool {
-	_, ok := ecm[component.Type()]
+	_, ok := ecm[component.ID()]
 	return ok
 }
 
@@ -32,12 +32,12 @@ func (ecm entityComponentMap) add(components ...Component) error {
 
 	for _, c := range components {
 		if ecm.contains(c) {
-			return fmt.Errorf("component %s already exists in the map", c.Type())
+			return fmt.Errorf("component %d already exists in the map", c.ID())
 		}
 	}
 
 	for _, c := range components {
-		ecm[c.Type()] = c
+		ecm[c.ID()] = c
 	}
 
 	return nil

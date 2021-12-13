@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-type OperativeSets map[EntityHandle][]Component
+type OperativeSets map[EntityID]map[ComponentID]Component
 
 type SystemQueryMode int
 
@@ -25,16 +25,16 @@ type System interface {
 	Process(dt time.Duration, operativeSets OperativeSets)
 }
 
-type systemWrapper struct {
-	del System
+type systemHarness struct {
+	s System
 }
 
-func (sw *systemWrapper) id() SystemID { return sw.del.ID() }
+func (sw *systemHarness) id() SystemID { return sw.s.ID() }
 
-func (sw *systemWrapper) process(r *Registry, dt time.Duration) error {
+func (sw *systemHarness) process(r *Registry, dt time.Duration) error {
 	entryTime := time.Now().UTC()
-	incl := sw.del.IncludeTypes()
-	es := r.QueryEntities(sw.del.QueryMode(), incl, sw.del.ExcludeTypes())
+	incl := sw.s.IncludeTypes()
+	es := r.QueryEntities(sw.s.QueryMode(), incl, sw.s.ExcludeTypes())
 
 	if len(es) == 0 {
 		return nil
@@ -50,7 +50,7 @@ func (sw *systemWrapper) process(r *Registry, dt time.Duration) error {
 		operativeSets[e] = cs
 	}
 
-	sw.del.Process(dt+time.Since(entryTime), operativeSets)
+	sw.s.Process(dt+time.Since(entryTime), operativeSets)
 	return nil
 }
 
@@ -65,9 +65,9 @@ func Process(r *Registry, dt time.Duration) {
 }
 
 func RegisterSystems(r *Registry, systems ...System) {
-	wrappers := make([]*systemWrapper, len(systems))
+	wrappers := make([]*systemHarness, len(systems))
 	for i, s := range systems {
-		wrappers[i] = &systemWrapper{del: s}
+		wrappers[i] = &systemHarness{s: s}
 	}
 
 	r.registerSystems(wrappers...)

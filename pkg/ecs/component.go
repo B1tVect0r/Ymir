@@ -1,13 +1,7 @@
 package ecs
 
-import (
-	"google.golang.org/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-)
-
-type ComponentID protoreflect.FullName
+type ComponentID uint16
 
 type Component interface {
-	proto.Message
-	Type() ComponentID
+	ID() ComponentID
 }

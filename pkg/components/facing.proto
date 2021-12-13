@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package components;
-
-option go_package = "github.com/B1tVect0r/ymir/pkg/components";
-
-message Facing {
-}

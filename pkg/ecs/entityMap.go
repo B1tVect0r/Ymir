@@ -2,41 +2,33 @@ package ecs
 
 import "fmt"
 
-type entityMapEntry struct {
-	e          *Entity
-	components entityComponentMap
-}
+type entityMap map[EntityID]entityComponentMap
 
-type entityMap map[EntityHandle]*entityMapEntry
-
-func (em entityMap) add(e *Entity, components ...Component) (EntityHandle, error) {
-	eID := EntityHandle(e.GetID())
+func (em entityMap) add(components ...Component) (EntityID, error) {
+	eID := nextEntityID()
 
 	if _, ok := em[eID]; ok {
-		return "", fmt.Errorf("map already contains entity %s", eID)
+		return InvalidEntityID, fmt.Errorf("map already contains entity %d", eID)
 	}
 
-	entry := &entityMapEntry{
-		e:          e,
-		components: make(entityComponentMap, len(components)),
+	ecm := make(entityComponentMap, len(components))
+
+	if err := ecm.add(components...); err != nil {
+		return InvalidEntityID, fmt.Errorf("failed to add components: %w", err)
 	}
 
-	if err := entry.components.add(components...); err != nil {
-		return "", fmt.Errorf("failed to add components: %w", err)
-	}
-
-	em[eID] = entry
+	em[eID] = ecm
 	return eID, nil
 }
 
-func (em entityMap) remove(eID EntityHandle) []ComponentID {
-	entry, ok := em[eID]
+func (em entityMap) remove(eID EntityID) []ComponentID {
+	ecm, ok := em[eID]
 	if !ok {
 		return nil
 	}
 
-	cIDs := make([]ComponentID, 0, len(entry.components))
-	for cID := range entry.components {
+	cIDs := make([]ComponentID, 0, len(ecm))
+	for cID := range ecm {
 		cIDs = append(cIDs, cID)
 	}
 
@@ -44,61 +36,61 @@ func (em entityMap) remove(eID EntityHandle) []ComponentID {
 	return cIDs
 }
 
-func (em entityMap) addComponents(eID EntityHandle, components ...Component) error {
-	entry, ok := em[eID]
+func (em entityMap) addComponents(eID EntityID, components ...Component) error {
+	ecm, ok := em[eID]
 	if !ok {
-		return fmt.Errorf("entity %s does not exist in map", eID)
+		return fmt.Errorf("entity %d does not exist in map", eID)
 	}
 
-	if err := entry.components.add(components...); err != nil {
-		return fmt.Errorf("failed to add components to entity %s: %w", eID, err)
+	if err := ecm.add(components...); err != nil {
+		return fmt.Errorf("failed to add components to entity %d: %w", eID, err)
 	}
 
 	return nil
 }
 
-func (em entityMap) removeComponents(eID EntityHandle, cIDs ...ComponentID) {
-	entry, ok := em[eID]
+func (em entityMap) removeComponents(eID EntityID, cIDs ...ComponentID) {
+	ecm, ok := em[eID]
 	if !ok {
 		return
 	}
 
-	entry.components.remove(cIDs...)
+	ecm.remove(cIDs...)
 }
 
-func (em entityMap) entityIsEmpty(eID EntityHandle) (bool, error) {
-	entry, ok := em[eID]
+func (em entityMap) entityIsEmpty(eID EntityID) (bool, error) {
+	ecm, ok := em[eID]
 	if !ok {
-		return false, fmt.Errorf("entity %s does not exist in map", eID)
+		return false, fmt.Errorf("entity %d does not exist in map", eID)
 	}
 
-	return len(entry.components) == 0, nil
+	return len(ecm) == 0, nil
 }
 
-func (em entityMap) numComponents(eID EntityHandle) int {
-	entry, ok := em[eID]
+func (em entityMap) numComponents(eID EntityID) int {
+	ecm, ok := em[eID]
 	if !ok {
 		return 0
 	}
 
-	return len(entry.components)
+	return len(ecm)
 }
 
-func (em entityMap) getComponents(eID EntityHandle, cIDs ...ComponentID) ([]Component, error) {
-	entry, ok := em[eID]
+func (em entityMap) getComponents(eID EntityID, cIDs ...ComponentID) (entityComponentMap, error) {
+	ecm, ok := em[eID]
 	if !ok {
-		return nil, fmt.Errorf("entity %s does not exist in map", eID)
+		return nil, fmt.Errorf("entity %d does not exist in map", eID)
 	}
 
-	outComponents := make([]Component, 0, len(cIDs))
+	outECM := make(entityComponentMap, len(cIDs))
 
 	for _, cID := range cIDs {
-		c, ok := entry.components[cID]
+		c, ok := ecm[cID]
 		if !ok {
-			return nil, fmt.Errorf("failed to find component %s on entity %s", cID, eID)
+			return nil, fmt.Errorf("failed to find component %d on entity %d", cID, eID)
 		}
-		outComponents = append(outComponents, c)
+		outECM[cID] = c
 	}
 
-	return outComponents, nil
+	return outECM, nil
 }

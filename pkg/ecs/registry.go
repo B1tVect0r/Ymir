@@ -9,28 +9,28 @@ type Registry struct {
 	sync.RWMutex
 	em                  entityMap
 	entitiesByComponent componentEntityMap
-	systems             map[SystemID]*systemWrapper
+	systems             map[SystemID]*systemHarness
 }
 
-func (r *Registry) RegisterEntity(e *Entity, cs ...Component) (EntityHandle, error) {
+func (r *Registry) RegisterEntity(cs ...Component) (EntityID, error) {
 	r.Lock()
 	defer r.Unlock()
 
-	eID, err := r.em.add(e, cs...)
+	eID, err := r.em.add(cs...)
 	if err != nil {
-		return "", fmt.Errorf("failed to add entity to entityMap: %w", err)
+		return InvalidEntityID, fmt.Errorf("failed to add entity to entityMap: %w", err)
 	}
 
 	for _, c := range cs {
-		if err := r.entitiesByComponent.add(c.Type(), eID); err != nil {
-			return "", fmt.Errorf("failed to register entity-component relationship: %w", err)
+		if err := r.entitiesByComponent.add(c.ID(), eID); err != nil {
+			return InvalidEntityID, fmt.Errorf("failed to register entity-component relationship: %w", err)
 		}
 	}
 
 	return eID, nil
 }
 
-func (r *Registry) UnregisterEntity(eID EntityHandle) error {
+func (r *Registry) UnregisterEntity(eID EntityID) error {
 	r.Lock()
 	defer r.Unlock()
 
@@ -43,16 +43,16 @@ func (r *Registry) UnregisterEntity(eID EntityHandle) error {
 	return nil
 }
 
-func (r *Registry) AddComponentsToEntity(eID EntityHandle, cs ...Component) error {
+func (r *Registry) AddComponentsToEntity(eID EntityID, cs ...Component) error {
 	r.Lock()
 	defer r.Unlock()
 
 	if err := r.em.addComponents(eID, cs...); err != nil {
-		return fmt.Errorf("failed to add components to entity %s: %w", eID, err)
+		return fmt.Errorf("failed to add components to entity %d: %w", eID, err)
 	}
 
 	for _, c := range cs {
-		if err := r.entitiesByComponent.add(c.Type(), eID); err != nil {
+		if err := r.entitiesByComponent.add(c.ID(), eID); err != nil {
 			return fmt.Errorf("failed to register entity-component relationship: %w", err)
 		}
 	}
@@ -60,7 +60,7 @@ func (r *Registry) AddComponentsToEntity(eID EntityHandle, cs ...Component) erro
 	return nil
 }
 
-func (r *Registry) RemoveComponentsFromEntity(eID EntityHandle, cIDs ...ComponentID) (bool, error) {
+func (r *Registry) RemoveComponentsFromEntity(eID EntityID, cIDs ...ComponentID) (bool, error) {
 	r.Lock()
 	defer r.Unlock()
 
@@ -73,7 +73,7 @@ func (r *Registry) RemoveComponentsFromEntity(eID EntityHandle, cIDs ...Componen
 	return r.em.entityIsEmpty(eID)
 }
 
-func (r *Registry) GetComponentsFromEntity(eID EntityHandle, cIDs ...ComponentID) ([]Component, error) {
+func (r *Registry) GetComponentsFromEntity(eID EntityID, cIDs ...ComponentID) (entityComponentMap, error) {
 	r.RLock()
 	defer r.RUnlock()
 
@@ -124,7 +124,7 @@ func (r *Registry) QueryEntities(qm SystemQueryMode, incl, excl []ComponentID) c
 	return finalIncludeSet.difference(finalExcludeSet)
 }
 
-func (r *Registry) registerSystems(sws ...*systemWrapper) {
+func (r *Registry) registerSystems(sws ...*systemHarness) {
 	r.Lock()
 	defer r.Unlock()
 
@@ -156,6 +156,6 @@ func NewRegistryWithConfig(c RegistryConfig) *Registry {
 	return &Registry{
 		em:                  make(entityMap, c.InitialEntityCapacity),
 		entitiesByComponent: make(componentEntityMap, c.InitialComponentsCapacity),
-		systems:             make(map[SystemID]*systemWrapper, c.InitialSystemsCapacity),
+		systems:             make(map[SystemID]*systemHarness, c.InitialSystemsCapacity),
 	}
 }

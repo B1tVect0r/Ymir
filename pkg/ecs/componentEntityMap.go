@@ -6,17 +6,17 @@ import "fmt"
 // hold a given component
 type componentEntityMap map[ComponentID]componentEntitySet
 
-func (cem componentEntityMap) add(cID ComponentID, eID EntityHandle) error {
+func (cem componentEntityMap) add(cID ComponentID, eID EntityID) error {
 	if _, ok := cem[cID]; !ok {
 		cem[cID] = componentEntitySet{}
 	} else if _, ok = cem[cID][eID]; ok {
-		return fmt.Errorf("entity %s is already associated with component %s", eID, cID)
+		return fmt.Errorf("entity %d is already associated with component %d", eID, cID)
 	}
 
 	cem[cID][eID] = struct{}{}
 	return nil
 }
 
-func (cem componentEntityMap) remove(cID ComponentID, eID EntityHandle) {
+func (cem componentEntityMap) remove(cID ComponentID, eID EntityID) {
 	delete(cem[cID], eID)
 }

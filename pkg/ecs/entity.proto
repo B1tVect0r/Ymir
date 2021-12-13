@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package ecs;
-
-option go_package = "github.com/B1tVect0r/ymir/pkg/ecs";
-
-message Entity {
-    string ID = 1;
-}

@@ -3,17 +3,17 @@ package ecs
 import "sort"
 
 // componentEntitySet
-type componentEntitySet map[EntityHandle]struct{}
+type componentEntitySet map[EntityID]struct{}
 
-func (ces componentEntitySet) add(e EntityHandle) {
+func (ces componentEntitySet) add(e EntityID) {
 	ces[e] = struct{}{}
 }
 
-func (ces componentEntitySet) remove(e EntityHandle) {
+func (ces componentEntitySet) remove(e EntityID) {
 	delete(ces, e)
 }
 
-func (ces componentEntitySet) contains(e EntityHandle) bool {
+func (ces componentEntitySet) contains(e EntityID) bool {
 	_, ok := ces[e]
 	return ok
 }

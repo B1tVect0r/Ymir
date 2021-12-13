@@ -1,47 +1,41 @@
 package ecs
 
 import (
-	"math/rand"
 	"testing"
-	"time"
 
-	"github.com/B1tVect0r/ymir/pkg/types/math/vector2"
-	"github.com/google/uuid"
+	"github.com/B1tVect0r/ymir/pkg/types/math/vec2"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"golang.org/x/sync/errgroup"
 )
 
 type testComponent1 struct {
-	vector2.Vector2
+	vec2.T
 }
 
-func (tc1 *testComponent1) Type() ComponentID {
-	return "tc1"
+func (tc1 *testComponent1) ID() ComponentID {
+	return 1
 }
 
 type testComponent2 struct {
-	vector2.Vector2
+	vec2.T
 }
 
-func (tc2 *testComponent2) Type() ComponentID {
-	return "tc2"
+func (tc2 *testComponent2) ID() ComponentID {
+	return 2
 }
 
 func TestRegisterEntity(t *testing.T) {
 	r := NewRegistry()
 
 	c := &testComponent1{}
-	cID := c.Type()
-	e := &Entity{ID: uuid.NewString()}
-
-	eID, err := r.RegisterEntity(e, c)
+	cID := c.ID()
+	eID, err := r.RegisterEntity(c)
 	require.NoError(t, err)
 
-	entry, ok := r.em[eID]
+	cm, ok := r.em[eID]
 	require.True(t, ok)
-	if assert.Equal(t, len(entry.components), 1) {
-		_, ok = entry.components[cID]
+	if assert.Equal(t, len(cm), 1) {
+		_, ok = cm[cID]
 		require.True(t, ok)
 	}
 
@@ -53,59 +47,39 @@ func TestRegisterEntity(t *testing.T) {
 	}
 }
 
-func TestMultiRoutineRegisterEntity(t *testing.T) {
-	r := NewRegistry()
-
-	eg := errgroup.Group{}
-
-	e := &Entity{ID: uuid.NewString()}
-
-	for i := 0; i < 5; i++ {
-		eg.Go(func() error {
-
-			time.Sleep(time.Duration(rand.Int31n(500)) * time.Millisecond)
-			_, err := r.RegisterEntity(e)
-			return err
-		})
-	}
-
-	require.Error(t, eg.Wait())
-}
-
 func TestUnregisterEntity(t *testing.T) {
 	r := NewRegistry()
 
-	e := &Entity{ID: uuid.NewString()}
 	c := &testComponent1{}
-	eID, err := r.RegisterEntity(e, c)
+	eID, err := r.RegisterEntity(c)
 	require.NoError(t, err)
 	require.Equal(t, 1, len(r.em))
 	require.Equal(t, 1, len(r.entitiesByComponent))
-	require.Equal(t, 1, len(r.entitiesByComponent[c.Type()]))
+	require.Equal(t, 1, len(r.entitiesByComponent[c.ID()]))
 
 	require.NoError(t, r.UnregisterEntity(eID))
 	require.Equal(t, 0, len(r.em))
 	require.Equal(t, 1, len(r.entitiesByComponent))
-	require.Equal(t, 0, len(r.entitiesByComponent[c.Type()]))
+	require.Equal(t, 0, len(r.entitiesByComponent[c.ID()]))
 
 }
 
 func TestAddComponentsToEntity(t *testing.T) {
 	r := NewRegistry()
 
-	eID, err := r.RegisterEntity(&Entity{ID: uuid.NewString()})
+	c1 := &testComponent1{}
+	eID, err := r.RegisterEntity(c1)
 
 	require.NoError(t, err)
 
-	c1 := &testComponent1{}
 	c2 := &testComponent2{}
 
-	require.NoError(t, r.AddComponentsToEntity(eID, c1, c2))
+	require.NoError(t, r.AddComponentsToEntity(eID, c2))
 
-	entry, ok := r.em[eID]
+	cm, ok := r.em[eID]
 	require.True(t, ok)
-	for _, cID := range []ComponentID{c1.Type(), c2.Type()} {
-		_, ok = entry.components[cID]
+	for _, cID := range []ComponentID{c1.ID(), c2.ID()} {
+		_, ok = cm[cID]
 		require.True(t, ok)
 
 		es, ok := r.entitiesByComponent[cID]
@@ -121,13 +95,12 @@ func TestAddComponentsToEntity(t *testing.T) {
 func TestRemoveComponentsFromEntity(t *testing.T) {
 	r := NewRegistry()
 
-	e := &Entity{ID: uuid.NewString()}
 	c1 := &testComponent1{}
 	c2 := &testComponent2{}
-	eID, err := r.RegisterEntity(e, c1, c2)
+	eID, err := r.RegisterEntity(c1, c2)
 	require.NoError(t, err)
 
-	empty, err := r.RemoveComponentsFromEntity(eID, c1.Type())
+	empty, err := r.RemoveComponentsFromEntity(eID, c1.ID())
 	require.NoError(t, err)
 	require.False(t, empty)
 }
@@ -135,26 +108,25 @@ func TestRemoveComponentsFromEntity(t *testing.T) {
 func TestGetComponentsFromEntity(t *testing.T) {
 	r := NewRegistry()
 
-	e := &Entity{ID: uuid.NewString()}
 	c1 := &testComponent1{}
 	c2 := &testComponent2{}
-	eID, err := r.RegisterEntity(e, c1, c2)
+	eID, err := r.RegisterEntity(c1, c2)
 	require.NoError(t, err)
 
-	cs, err := r.GetComponentsFromEntity(eID, c1.Type())
+	cs, err := r.GetComponentsFromEntity(eID, c1.ID())
 	require.NoError(t, err)
 	if assert.Equal(t, 1, len(cs)) {
-		require.Equal(t, cs[0], c1)
+		require.Equal(t, cs[c1.ID()], c1)
 	}
 
-	cs, err = r.GetComponentsFromEntity(eID, c1.Type(), c2.Type())
+	cs, err = r.GetComponentsFromEntity(eID, c1.ID(), c2.ID())
 	require.NoError(t, err)
 	if assert.Equal(t, 2, len(cs)) {
-		require.Equal(t, cs[0], c1)
-		require.Equal(t, cs[1], c2)
+		require.Equal(t, cs[c1.ID()], c1)
+		require.Equal(t, cs[c2.ID()], c2)
 	}
 
-	_, err = r.GetComponentsFromEntity(eID, c1.Type(), c2.Type(), "dne")
+	_, err = r.GetComponentsFromEntity(eID, c1.ID(), c2.ID(), 3)
 	require.Error(t, err)
 }
 
@@ -164,7 +136,7 @@ func TestQueryEntities(t *testing.T) {
 	c1 := &testComponent1{}
 	c2 := &testComponent2{}
 
-	eID, err := r.RegisterEntity(&Entity{ID: uuid.NewString()}, c1, c2)
+	eID, err := r.RegisterEntity(c1, c2)
 	require.NoError(t, err)
 
 	testCases := []struct {
@@ -177,36 +149,36 @@ func TestQueryEntities(t *testing.T) {
 		{
 			"exclusive c1",
 			Exclusive,
-			[]ComponentID{c1.Type()},
+			[]ComponentID{c1.ID()},
 			[]ComponentID{},
 			0,
 		},
 		{
 			"inclusive c1",
 			Inclusive,
-			[]ComponentID{c1.Type()},
+			[]ComponentID{c1.ID()},
 			[]ComponentID{},
 			1,
 		},
 		{
 			"exclusive c1 and c2",
 			Exclusive,
-			[]ComponentID{c1.Type(), c2.Type()},
+			[]ComponentID{c1.ID(), c2.ID()},
 			[]ComponentID{},
 			1,
 		},
 		{
 			"exclusive c1, explicitly exclude c2",
 			Exclusive,
-			[]ComponentID{c1.Type()},
-			[]ComponentID{c2.Type()},
+			[]ComponentID{c1.ID()},
+			[]ComponentID{c2.ID()},
 			0,
 		},
 		{
 			"inclusive c1, explicitly exclude c2",
 			Inclusive,
-			[]ComponentID{c1.Type()},
-			[]ComponentID{c2.Type()},
+			[]ComponentID{c1.ID()},
+			[]ComponentID{c2.ID()},
 			0,
 		},
 	}
@@ -219,5 +191,28 @@ func TestQueryEntities(t *testing.T) {
 				require.True(t, ok)
 			}
 		})
+	}
+}
+
+func BenchmarkQueryEntities(b *testing.B) {
+	r := NewRegistry()
+
+	for i := 0; i < 512; i++ {
+		eID, err := r.RegisterEntity(&testComponent1{})
+		if err != nil {
+			b.Error(err)
+			b.FailNow()
+		}
+		if i%2 == 0 {
+			r.AddComponentsToEntity(eID, &testComponent2{})
+		}
+
+	}
+
+	for i := 0; i < b.N; i++ {
+		r.QueryEntities(Exclusive, []ComponentID{1}, []ComponentID{})
+		r.QueryEntities(Inclusive, []ComponentID{1}, []ComponentID{})
+		r.QueryEntities(Exclusive, []ComponentID{1, 2}, []ComponentID{})
+		r.QueryEntities(Inclusive, []ComponentID{2}, []ComponentID{1})
 	}
 }
