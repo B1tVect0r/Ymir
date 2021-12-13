@@ -15,7 +15,7 @@ const (
 	Inclusive
 )
 
-type SystemID string
+type SystemID uint16
 
 type System interface {
 	ID() SystemID
