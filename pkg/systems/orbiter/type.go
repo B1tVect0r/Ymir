@@ -1,7 +1,8 @@
 package orbiter
 
 import (
-	"log"
+	"fmt"
+	"os"
 	"time"
 
 	"github.com/B1tVect0r/ymir/pkg/components/orbit"
@@ -11,39 +12,39 @@ import (
 
 const SystemID ecs.SystemID = 1
 
-var _ ecs.System = (*OrbiterSystem)(nil)
+var _ ecs.System = (*System)(nil)
 
-type OrbiterSystem struct {
+type System struct {
 	elapsed time.Duration
 }
 
-func (os *OrbiterSystem) ID() ecs.SystemID {
+func (s *System) ID() ecs.SystemID {
 	return SystemID
 }
 
-func (os *OrbiterSystem) QueryMode() ecs.SystemQueryMode {
+func (s *System) QueryMode() ecs.SystemQueryMode {
 	return ecs.Exclusive
 }
 
-func (os *OrbiterSystem) IncludeTypes() []ecs.ComponentID {
+func (s *System) IncludeTypes() []ecs.ComponentID {
 	return []ecs.ComponentID{
 		orbit.ComponentID,
 		pos2d.ComponentID,
 	}
 }
 
-func (os *OrbiterSystem) ExcludeTypes() []ecs.ComponentID {
+func (s *System) ExcludeTypes() []ecs.ComponentID {
 	return []ecs.ComponentID{}
 }
 
-func (os *OrbiterSystem) Process(dt time.Duration, operativeSets ecs.OperativeSets) {
-	os.elapsed += dt
+func (s *System) Process(dt time.Duration, operativeSets ecs.OperativeSets) {
+	s.elapsed += dt
 
 	for entity, components := range operativeSets {
 		orbit := components[orbit.ComponentID].(*orbit.T)
 		pos := components[pos2d.ComponentID].(*pos2d.T)
-		pos.Loc = orbit.PositionAt(orbit.AngleAt(os.elapsed))
+		pos.Loc = orbit.PositionAt(orbit.AngleAt(s.elapsed))
 
-		log.Printf("Entity %d position: %v", entity, pos)
+		fmt.Fprintf(os.Stdout, "Entity %d position: %v\n", entity, pos.Loc)
 	}
 }
