@@ -1,8 +1,6 @@
 package orbiter
 
 import (
-	"fmt"
-	"os"
 	"time"
 
 	"github.com/B1tVect0r/ymir/pkg/components/orbit"
@@ -40,11 +38,9 @@ func (s *System) ExcludeTypes() []ecs.ComponentID {
 func (s *System) Process(dt time.Duration, operativeSets ecs.OperativeSets) {
 	s.elapsed += dt
 
-	for entity, components := range operativeSets {
+	for _, components := range operativeSets {
 		orbit := components[orbit.ComponentID].(*orbit.T)
 		pos := components[pos2d.ComponentID].(*pos2d.T)
 		pos.Loc = orbit.PositionAt(orbit.AngleAt(s.elapsed))
-
-		fmt.Fprintf(os.Stdout, "Entity %d position: %v\n", entity, pos.Loc)
 	}
 }
