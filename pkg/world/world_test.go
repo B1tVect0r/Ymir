@@ -34,7 +34,12 @@ func BenchmarkRunningWorld(b *testing.B) {
 		}
 	}
 
-	w.RegisterSystems(&worldBenchmarkSystem{})
+	cIDs := make([]ecs.ComponentID, len(components))
+	for i := range cIDs {
+		cIDs[i] = components[i].ID()
+	}
+
+	w.RegisterSystems(&worldBenchmarkSystem{include: cIDs})
 
 	t := time.Now()
 	for i := 0; i < b.N; i++ {
